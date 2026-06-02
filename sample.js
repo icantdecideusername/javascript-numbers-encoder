@@ -1,17 +1,21 @@
-const encoder = require('./module.cjs');
+const encoder = require('./module64.cjs');7
 
 // This is the format for data layout
 const schema = [
-  { name: "testvalue1", bits: 32, type: "int", precision: 10000 },
+  { name: "testvalue1", bits: 32, type: "int", precision: 10000 }, // lol
   { name: "testvalue2", bits: 24, type: "uint" },
   { name: "hello", bits: 8, type: "uint" },
+  { name: "int64", bits: 64, type: "int64", precision: 100},
+  { name: "uint64", bits: 64, type: "uint64", precision: 100},
 ];
 
 // Test data
 const testData = {
   testvalue1: 160.2216,
   testvalue2: 10,
-  hello: 255
+  hello: 255,
+  int64: -123456787654.321,
+  uint64: 6767676767.67 // I got lazy
 };
 
 // Precompute bit widths
