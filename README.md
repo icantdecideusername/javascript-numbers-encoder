@@ -5,3 +5,5 @@ I wrote this project over the summer break of 2025 and kinda just sunk into it, 
 After 1 year i finally revisited it and gave it 64 bits
 
 Yeah I hope this eventually gets used
+
+btw the documentation is really poor i just did this for myself
